@@ -9,6 +9,44 @@ body {
     background-color: #c9fdfd;
 }
 
+h1 {
+    color: black;  /* color might be adjust as necessary */
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: black; /* color might be adjust as necessary */
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+
+h3 {
+    color: black;  /* color might be adjust as necessary */
+    font-size: 22px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+
+p {  
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+caption {  
+    font-size: 16px; /* this is for section after main title - before paragrah ; usually a highlight paragraph or summary. this font also can be used for non-login button*/
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
