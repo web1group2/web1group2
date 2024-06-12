@@ -428,6 +428,8 @@ main {
     background-color:#137984;
     float:left;
     margin: 30px;
+    margin-left: 3;
+    margin-right: 3;
 }
 
 .sp-card img {
