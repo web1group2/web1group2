@@ -535,6 +535,7 @@ p {
 .footer-container p {
     font-size: 16px;
     text-align: center !important;
+    font-weight: 400px;
 }
 
 @media (max-width: 768px) {
