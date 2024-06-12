@@ -119,7 +119,7 @@ nav {
     margin: 4px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -557,11 +557,6 @@ table {
     font-weight: 400;
 }
 
-@media (max-width: 768px) {
-    .footer-container p {
-        font-size: 2.5vw;
-    }
-}
 
 @media (max-width: 480px) {
     .footer-container p {
