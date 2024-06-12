@@ -11,14 +11,12 @@ body {
 
 h1 {
     color: black;  /* color might be adjust as necessary */
-    text-align: center;
     font-size: 32px;
     margin-bottom: 10px;
 }
 
 h2 {
     color: black; /* color might be adjust as necessary */
-    text-align: center;
     font-size: 26px;
     margin-bottom: 10px;
 }
