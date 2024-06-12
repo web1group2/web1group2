@@ -421,7 +421,7 @@ main {
 
 .smallpromotion-container {
     position: relative;
-    margin: 10px;
+    margin: 0 auto;
     padding: 100px;
     padding-bottom: 50px;
     width: 1024px;
