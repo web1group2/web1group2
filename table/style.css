@@ -341,6 +341,7 @@ nav {
       margin: 70px;
       margin-top: 120px; /* bfr is 80px */
       margin-left: 5%;
+      text-align: center; 
    }
    
    h2 {
