@@ -435,8 +435,8 @@ nav {
 
    main.table {
       width: 35vw;
-      height: 85vh, auto;
-      margin-left: 32%;
+      /* height: 85vh, auto; */
+      margin-left: 25vw; /* bfr 32% */
       margin-bottom: 5rem;
       background-color: azure;
       box-shadow: 0.4rem .8rem #0005;
