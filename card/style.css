@@ -333,9 +333,11 @@ nav {
 /* /////// */
 
 h1 {
-    text-align: left;
+    /* text-align: left; */
+    text-align: center;
     padding-top: 50px;
     margin-bottom: 1.5rem;
+    font-size: 32px; /* new added */
 }
 
 h2 {
@@ -357,6 +359,7 @@ p {
 .about {
     margin: auto;
     text-align: justify;
+    max-width: 800; /* new add */
 }
 
 
