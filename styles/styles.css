@@ -152,7 +152,7 @@ nav {
     margin: 4px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -513,7 +513,7 @@ nav {
     text-align: center !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footer-container p {
         font-size: 2.5vw;
     }
