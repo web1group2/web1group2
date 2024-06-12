@@ -476,6 +476,10 @@ h3{
     .button {
         left: -20%;
     }
+
+    .promotion-text {
+        left: 0;
+    }
         
 }
 
