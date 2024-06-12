@@ -441,15 +441,22 @@ h3{
 }
 
 .button {
-    position: relative;
+
     margin-top: 40px;
     border-radius: 25px;
     width:300px;
     background-color: #137984;
     float: left;
     position: relative;
-    transform: translateX(157%);
+    left: calc(50% - 150px);
 }
+
+@media (max-width: 600px) {
+    .button { 
+        left: auto:
+        }
+}
+
 
 h4 {
     text-align: center;
