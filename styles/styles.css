@@ -42,7 +42,7 @@ p {
 caption {  
     font-size: 16px; /* this is for section after main title - before paragrah ; usually a highlight paragraph or summary. this font also can be used for non-login button*/
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
     text-align: justify;
 }
