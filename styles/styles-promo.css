@@ -433,6 +433,10 @@ main {
     .smallpromotion-container {
         width: 100vw !important;
     }
+
+    #putithere {
+        left: -15%;
+    }
 }
 
 .sp-card {
