@@ -442,11 +442,14 @@ nav {
       background-color: azure;
       box-shadow: 0.4rem .8rem #0005;
       border-radius: 2rem;
-
       align-content: center;
 
    }
 
+table {
+    width: 100%;
+}
+    
    h4 {
       font-size: 30PX;
    }
