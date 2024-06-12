@@ -375,11 +375,12 @@ p {
 
 .slider-cont {
     position: relative;
-    margin-left: 23%;
+    /* margin-left: 23%; deleted fr earelie version*/
     margin-bottom: 10%;
     top: 100px;
-    left: 100px;
-    right: 50px;
+    /* left: 100px; 
+     right: 50px; deleted */
+    left: calc(50% - 365px);
     width: 730px;
     height:230px;
     background-color: #c9fdfd;
