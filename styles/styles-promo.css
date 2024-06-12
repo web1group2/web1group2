@@ -451,11 +451,6 @@ h3{
     left: calc(50% - 150px);
 }
 
-@media (max-width: 600px) {
-    .button { 
-        left: auto:
-        }
-}
 
 
 h4 {
