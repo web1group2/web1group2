@@ -394,14 +394,14 @@ main {
 .promotion-text {
     position: absolute;
     top:65%; 
-    left: 30%;
+    left: 25%;
     background-color: rgba(195, 224, 241, 0.7); 
     padding: 20px 40px 40px 40px;
     border-radius: 20px;
     text-align: center;
     transform: translateY(-100%);
     line-height: 10%;
-    width: 40%;
+    width: 50%;
 }
 
 .btn {
