@@ -363,7 +363,7 @@ body {
     margin-bottom: 3rem;
 }
 
-@media (max-widht: 600px) {
+@media (max-width: 600px) {
     .promotion-text p {
         font-size: 11px;
     }
