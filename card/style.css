@@ -359,7 +359,7 @@ p {
 .about {
     margin: auto;
     text-align: justify;
-    max-width: 800; /* new add */
+    max-width: 800px; /* new add */
 }
 
 
