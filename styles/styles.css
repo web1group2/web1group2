@@ -412,6 +412,7 @@ nav {
 .welcome-text p {
     color: #005ac2;
     margin: 10px 0 0;
+    text-align: center;
 }
 
 #highlights {
