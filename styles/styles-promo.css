@@ -429,15 +429,7 @@ main {
 }
 
 
-@media (max-width: 600px) {
-    .smallpromotion-container {
-        width: 100vw !important;
-    }
 
-    #putithere {
-        left: -15%;
-    }
-}
 
 .sp-card {
     position: relative;
@@ -472,7 +464,20 @@ h3{
     left: calc(50% - 150px);
 }
 
+@media (max-width: 600px) {
+    .smallpromotion-container {
+        width: 100vw !important;
+    }
 
+    #putithere {
+        left: -15%;
+    }
+    
+    .button {
+        left: -20%;
+    }
+        
+}
 
 h4 {
     text-align: center;
