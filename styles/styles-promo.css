@@ -1,6 +1,50 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* box-sizing: border-box; */
+}
 
+body {
+    background-color: #c9fdfd;
+}
 
-/* NAV BAR*/
+h1 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: black;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: black;
+    font-size: 22px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+caption {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 
 nav {
     display: flex;
@@ -14,7 +58,6 @@ nav {
     left: 0;
     z-index: 2;
 }
-
 
 .logo {
     display: flex;
@@ -79,9 +122,8 @@ nav {
 }
 
 .login button {
-    color: #137984 !important;
-    background-color: #ffffff !important;
-    font-family: 'Roboto', sans-serif;
+    color: #137984;
+    background-color: #ffffff;
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 18px;
@@ -125,10 +167,7 @@ nav {
     .hamburger {
         display: flex;
     }
-
 }
-
-/* MODAL*/
 
 .modal {
     display: none;
@@ -223,7 +262,7 @@ nav {
 }
 
 .modal-logo img {
-    height: 200px;
+    height: 100px;
     width: auto;
 }
 
@@ -232,8 +271,6 @@ nav {
     font-size: 14px;
     padding-left: 20px;
 }
-
-/* SIDE MENU */
 .side-menu {
     height: 100%;
     width: 0;
@@ -327,178 +364,197 @@ nav {
     margin-top: 20px;
 }
 
-
-/* /////////// */
-
-
-body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color:#c9fdfd;
-}
-
-#main {
-    padding: 32px;
-    background-color: #c9fdfd ;
-}
-
-.main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.promotion-text h1 {
-    color: #005ac2;  /* color might be adjust as necessary */
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.promotion-text p {
-    color: #005ac2; /* color might be adjust as necessary */
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 3rem;
-}
-
-@media (max-width: 600px) {
-    .promotion-text p {
-        font-size: 11px;
-    }
-}
-    
-main {
-    padding-bottom: 100px;
-}
-    
-.promotion-container {
-    margin-top: 80px;
-    height: 70vh;
-    background-color: #009987;
-}
-
-.promotion-container img {
-    height: 100%;
+/* Promotion Styles */
+.promotion {
+    position: relative;
     width: 100%;
+    height: 50vh; /* height: calc(100vh - 70px); */
+    overflow: hidden;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.promotion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     background: rgba(0, 0, 0, 0.3);
 }
 
 .promotion-text {
     position: absolute;
-    top:65%; 
-    left: 25%;
-    background-color: rgba(195, 224, 241, 0.7); 
-    padding: 20px 40px 40px 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(195, 224, 241, 0.7);
+    padding: 20px 150px; /* padding: 20px 30px; */
     border-radius: 20px;
     text-align: center;
-    transform: translateY(-100%);
-    line-height: 10%;
-    width: 50%;
+    max-width: 90%;
+    box-sizing: border-box;
 }
 
+.promotion-text h1 {
+    color: #005ac2;
+    margin: 0;
+    font-size: 2em; /* Default font size */
+}
+
+.promotion-text p {
+    color: #005ac2;
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 1em; /* Default font size */
+}
+
+/* Button Styles */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+} 
+
 .btn {
-    padding:10px;
+    display: inline-block; /* align-self: start; */
+    padding: 10px 20px; /* padding: 10px 10px; */
     color: #137984;
     background-color: #fff;
     border: 2px solid #137984;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; /* Added to create space above the button */
 }
 
-.btn:hover {
-    background-color: #137984;
-    color: white;
+ .btn-more {
+    display: inline-block;
+    padding: 15px 30px; /* Adjust padding for larger button */
+    color: white; /* Change text color to white */
+    background-color: #137984; /* Background color */
+    border: none; /* Remove border */
+    border-radius: 40px; /* Rounded corners */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em; /* Adjust font size for larger text */
+    transition: background-color 0.3s, color 0.3s;
+    width: 300px; /* Fixed width */
+    height: 70px;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.btn-more:hover {
+    background-color: #0a5a5a; /* Slightly darker background color on hover */
+} 
+
+/* Product Section Styles */
+.product-section {
+    text-align: center;
+    padding: 20px;
 }
 
-.smallpromotion-container {
-    position: relative;
-    margin: 0 auto;
-    padding: 100px;
-    padding-bottom: 50px;
-    width: 1024px;
-
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+    gap: 10px;
+    justify-content: center; /* Center the grid */
+    align-items: center; /* Align items vertically center */
+    width: 80%; /* Adjusted width to keep the grid centered */
+    margin: 0 auto; /* Center the grid horizontally */
 }
-
-
-
 
 .sp-card {
-    position: relative;
-    width: 250px;
-    height: 200px;
-    background-color:#137984;
-    float:left;
-    margin: 30px;
-    margin-left: 3px;
-    margin-right: 3px;
+    width: 80%;
+    text-align: center;
+    padding: 0 5px; /* Adjusted padding for closer left and right space */
 }
 
 .sp-card img {
-    position: relative;
-    width: 250px;
-    height: 200px;
-    float:left;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0; /* Ensure no extra margin around the image */
 }
 
-h3{
-    text-align: center;
-}
-
-.button {
-
-    margin-top: 40px;
-    border-radius: 25px;
-    width:300px;
-    background-color: #137984;
-    float: left;
-    position: relative;
-    left: calc(50% - 150px);
-}
-
-@media (max-width: 600px) {
-    .smallpromotion-container {
-        width: 100vw !important;
-    }
-
-    #putithere {
-        left: -15%;
-    }
-    
-    .button {
-        left: -20%;
-    }
-
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
     .promotion-text {
-/*         left: 0; */
+        padding: 25px 40px; /* Increased padding for tablets */
+        background: rgba(195, 224, 241, 0.9); /* Increased background opacity */
     }
-        
+    .promotion-text h1 {
+        font-size: 2.2em; /* Increased font size */
+    }
+    .promotion-text p {
+        font-size: 1.2em; /* Increased font size */
+    }
+    .btn {
+        padding: 12px 24px; /* Increased button padding */
+        font-size: 1.1em; /* Increased button font size */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 20px;
+        width: 100%;
+    }
+
+    .sp-card {
+        width: 150px;
+    }
+
+    .sp-card h3 {
+        font-size: 1.2em;
+    }
 }
 
-h4 {
-    text-align: center;
-    position: relative;
+@media (max-width: 480px) {
+    .promotion-text {
+        padding: 20px 30px; /* Adjusted padding for mobile devices */
+        background: rgba(195, 224, 241, 0.95); /* Increased background opacity */
+    }
+    .promotion-text h1 {
+        font-size: 2.5em; /* Increased font size */
+    }
+    .promotion-text p {
+        font-size: 1.3em; /* Increased font size */
+    }
+    .btn {
+        padding: 14px 28px; /* Increased button padding */
+        font-size: 1.2em; /* Increased button font size */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .sp-card {
+        width: 150px;
+    }
+
+    .sp-card h3 {
+        font-size: 1em;
+    }
 }
 
-
-/* FOOTER */
-
+/* Footer Styles */
 .footer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px;
-    height: 30vh;
+    padding: 20px;
     background-color: #137984;
     color: #fff;
 }
@@ -529,5 +585,3 @@ h4 {
         font-size: 2.5vw;
     }
 }
-
-
