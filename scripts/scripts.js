@@ -20,6 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Define the toggleSideMenu function
+        function toggleSideMenu() {
+            const sideMenu = document.getElementById('side-menu');
+            if (sideMenu.style.width === '100%') {
+                sideMenu.style.width = '0';
+            } else {
+                sideMenu.style.width = '100%';
+            }
+        }
+
+
 // Modal functions
 function openModal(modalId) {
     document.getElementById(modalId).style.display = 'flex';
