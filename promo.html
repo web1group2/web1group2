@@ -144,6 +144,34 @@
         </div>
     </footer>
 
-    <script src="scripts/scripts-promo.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const productGrid = document.getElementById('putithere');
+    const moreBtn = document.getElementById('seemore');
+    const eachofit = '<div class="sp-card"><img src="images/promo.jpg" alt="Small treasure"><h3>Small treasure</h3></div>';
+    let currentCount = 0;
+
+    function addProducts(count) {
+        let productsHTML = '';
+        for (let i = 0; i < count; i++) {
+            productsHTML += eachofit;
+        }
+        productGrid.innerHTML += productsHTML;
+        currentCount += count;
+    }
+
+    // Initial load
+    addProducts(4);
+
+    moreBtn.addEventListener('click', () => {
+        addProducts(4);
+        if (currentCount >= 20) {
+            moreBtn.style.display = 'none';
+        }
+    });
+    </script>
+    
 </body>
 </html>
