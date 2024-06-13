@@ -1,8 +1,3 @@
-// Function to toggle the side menu
-function toggleSideMenu() {
-    const sideMenu = document.getElementById('side-menu');
-    sideMenu.style.width = sideMenu.style.width === '100%' ? '0' : '100%';
-}
 
 
 document.addEventListener('DOMContentLoaded', () => {
