@@ -32,132 +32,26 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-    </nav> 
-   
-    <div id="login-form" class="modal">
-        <div class="modal-content">
-            <span onclick="closeModal('login-form')" class="close-btn">&times;</span>
-            <div class="modal-logo">
-                <img src="images/logo2.png" alt="Logo">
-            </div>
-            <form>
-                <div class="container">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <button type="submit">Login</button>
-                    <button type="button" onclick="closeModal('login-form')" class="cancelbtn">Cancel</button>
-                    <div class="signup-container">
-                        <p>Don't have an account? <a href="#" class="signup-link" onclick="switchToSignup()">Sign Up</a></p>
-                    </div>
-                </div>
-            </form>
+    </nav>
+
+    <div class="promotion">
+        <div class="overlay"></div>
+        <img src="images/promo1.jpg" alt="treasures">
+        <div class="promotion-text">
+            <h1>PROMOTION</h1>
+            <p>Shiny treasures await for your arrival</p>
+            <a href="major-promo.html" class="btn">Find out more</a>
         </div>
     </div>
 
-   <div id="signup-form" class="modal">
-        <div class="modal-content">
-            <span onclick="closeModal('signup-form')" class="close-btn">&times;</span>
-            <div class="modal-logo">
-                <img src="images/logo2.png" alt="Logo">
-            </div>
-            <form onsubmit="return validateSignupForm()">
-                <div class="container">
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                    <p>Password must contain:</p>
-                    <ul class="password-rules">
-                        <li>At least one lowercase letter</li>
-                        <li>At least one uppercase letter</li>
-                        <li>At least one number</li>
-                        <li>At least one special character</li>
-                        <li>At least 8 characters</li>
-                    </ul>
-                    <button type="submit">Sign Up</button>
-                    <button type="button" onclick="closeModal('signup-form')" class="cancelbtn">Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div> 
-
-   <div id="contact-form" class="modal">
-        <div class="modal-content">
-            <span onclick="redirectToHomepage()" class="close-btn">&times;</span>
-            <div class="modal-logo">
-                <img src="images/logo2.png" alt="Logo">
-            </div>
-            <form>
-                <div class="container">
-                    <label for="name"><b>Name</b></label>
-                    <input type="text" placeholder="Enter Your Name" name="name" required>
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Your Email" name="email" required>
-                    <label for="message"><b>Message</b></label>
-                    <textarea placeholder="Enter Your Message" name="message" required></textarea>
-                    <button type="submit">Send</button>
-                    <button type="button" onclick="redirectToHomepage()" class="cancelbtn">Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div> 
-
-    <main>
-    <section id="promotion">
-        <div class="promotion-container">
-            <div class="overlay"></div>
-            <img src="images/promo1.jpg">
-          <div class="promotion-text">
-            <h1>"PROMOTION"</h1>
-            <p>Shiny treasures await for your arrival</p>
-            <a href="major-promo.html" class="btn">Find out more</a>
-          </div>  
+    <!-- Collapsible Product Grid -->
+    <section class="product-section">
+        <div class="product-grid" id="putithere"></div>
+        <div class="btn-container">
+            <button class="btn-more" id="seemore">More available</button>
         </div>
     </section>
-        <section id="smallpromotion">
-        <div class="smallpromotion-container">
-            <div id="putithere" style="position: relative; display: inline-block;"></div>
-            <!-- <div class="sp-card">
-                <img src="promo.jpg">
-                <h3>Small treasure</h3>
-            </div> 
-            <div class="sp-card">
-                <img src="promo.jpg">
-                <h3>Small treasure</h3>
-            </div> 
-            <div class="sp-card">
-                <img src="promo.jpg">
-                <h3>Small treasure</h3>
-            </div> 
-            <div class="sp-card">
-                <img src="promo.jpg">
-                <h3>Small treasure</h3>
-            </div> 
-            <div class="sp-card">
-                <img src="promo.jpg">
-            </div> 
-            <div class="sp-card">
-                <img src="promo.jpg">
-            </div> 
-            <div class="sp-card">
-                <img src="promo.jpg">
-            </div> 
-            <div class="sp-card">
-                <img src="promo.jpg">
-            </div>  -->
-            <div class="button" id="seemore">
-                <h4>More available</h4>
-            </div>
-        </div>
-        </section>
-    </main>
-    
+
     <div id="side-menu" class="side-menu">
         <span class="close-btn" onclick="toggleSideMenu()">&times;</span>
         <div class="side-menu-container">
@@ -191,25 +85,33 @@
         </div>
     </footer>
 
-    <script>
-        var eachofit = '<div class="sp-card"><img src="promo.jpg"><h3>Small treasure</h3></div>';
-        var sewn = '';
-        for (var i=0; i<4; i++) {
-            sewn = sewn + eachofit;
-        }
-        document.getElementById('putithere').innerHTML = sewn;
-
-        var moremore = document.getElementById('seemore');
-        moremore.onclick = function() {
-            for (var i=0; i<4; i++) {
-                sewn = sewn + eachofit;
-            }
-            document.getElementById('putithere').innerHTML = sewn;
-        }
-
-        
-    </script>
-
     <script src="scripts/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const productGrid = document.getElementById('putithere');
+            const moreBtn = document.getElementById('seemore');
+            const eachofit = '<div class="sp-card"><img src="images/promo.jpg" alt="Small treasure"><h3>Small treasure</h3></div>';
+            let currentCount = 0;
+
+            function addProducts(count) {
+                let productsHTML = '';
+                for (let i = 0; i < count; i++) {
+                    productsHTML += eachofit;
+                }
+                productGrid.innerHTML += productsHTML;
+                currentCount += count;
+            }
+
+            // Initial load
+            addProducts(4);
+
+            moreBtn.addEventListener('click', () => {
+                addProducts(4);
+                if (currentCount >= 20) {
+                    moreBtn.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
