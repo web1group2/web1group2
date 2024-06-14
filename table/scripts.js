@@ -1,3 +1,4 @@
+window.onload=function(){
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const sideMenu = document.getElementById('side-menu');
@@ -17,6 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
         sideMenu.style.width = '0';
     });
 });
+};
+// Define the toggleSideMenu function
+        function toggleSideMenu() {
+            const sideMenu = document.getElementById('side-menu');
+            if (sideMenu.style.width === '100%') {
+                sideMenu.style.width = '0';
+            } else {
+                sideMenu.style.width = '100%';
+            }
+        }
 
 // Modal functions
 function openModal(modalId) {
