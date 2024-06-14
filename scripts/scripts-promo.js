@@ -1,3 +1,4 @@
+window.onload=function(){
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const sideMenu = document.getElementById('side-menu');
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sideMenu.style.width = '0';
     });
 });
+};
 
 // Modal functions
 function openModal(modalId) {
